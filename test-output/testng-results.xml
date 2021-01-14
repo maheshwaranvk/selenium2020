@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="43525" started-at="2021-01-12T22:35:05 IST" finished-at="2021-01-12T22:35:48 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="43525" started-at="2021-01-12T22:35:05 IST" finished-at="2021-01-12T22:35:48 IST">
+      <class name="testng.day2_learnDependency.DeleteLead">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.day2_learnDependency.DeleteLead@29b5cd00]" name="beforeSuite" is-config="true" duration-ms="5715" started-at="2021-01-12T22:35:32 IST" finished-at="2021-01-12T22:35:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="executeDeleteLead()[pri:0, instance:testng.day2_learnDependency.DeleteLead@29b5cd00]" name="executeDeleteLead" duration-ms="10645" started-at="2021-01-12T22:35:38 IST" depends-on-methods="testng.day2_learnDependency.EditLeads.executeEditLeads" finished-at="2021-01-12T22:35:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeDeleteLead -->
+      </class> <!-- testng.day2_learnDependency.DeleteLead -->
+      <class name="testng.day2_learnDependency.EditLeads">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.day2_learnDependency.EditLeads@60285225]" name="beforeSuite" is-config="true" duration-ms="6175" started-at="2021-01-12T22:35:15 IST" finished-at="2021-01-12T22:35:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="executeEditLeads()[pri:0, instance:testng.day2_learnDependency.EditLeads@60285225]" name="executeEditLeads" duration-ms="10202" started-at="2021-01-12T22:35:22 IST" depends-on-methods="testng.day2_learnDependency.CreateLead.executeCreateLead" finished-at="2021-01-12T22:35:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeEditLeads -->
+      </class> <!-- testng.day2_learnDependency.EditLeads -->
+      <class name="testng.day2_learnDependency.CreateLead">
+        <test-method status="PASS" signature="getExcelName()[pri:0, instance:testng.day2_learnDependency.CreateLead@e874448]" name="getExcelName" is-config="true" duration-ms="7" started-at="2021-01-12T22:35:05 IST" finished-at="2021-01-12T22:35:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getExcelName -->
+        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.day2_learnDependency.CreateLead@e874448]" name="beforeSuite" is-config="true" duration-ms="7249" started-at="2021-01-12T22:35:05 IST" finished-at="2021-01-12T22:35:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="executeCreateLead(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.day2_learnDependency.CreateLead@e874448]" name="executeCreateLead" duration-ms="3004" started-at="2021-01-12T22:35:12 IST" data-provider="fetchData" finished-at="2021-01-12T22:35:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wirpo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Karthik]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gunasekaran]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeCreateLead -->
+      </class> <!-- testng.day2_learnDependency.CreateLead -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
