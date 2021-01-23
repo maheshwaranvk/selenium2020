@@ -1,113 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="43525" started-at="2021-01-12T22:35:05 IST" finished-at="2021-01-12T22:35:48 IST">
+  <suite name="Default suite" duration-ms="5536" started-at="2021-01-23T16:31:14 IST" finished-at="2021-01-23T16:31:20 IST">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunText@1060b431]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="43525" started-at="2021-01-12T22:35:05 IST" finished-at="2021-01-12T22:35:48 IST">
-      <class name="testng.day2_learnDependency.DeleteLead">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.day2_learnDependency.DeleteLead@29b5cd00]" name="beforeSuite" is-config="true" duration-ms="5715" started-at="2021-01-12T22:35:32 IST" finished-at="2021-01-12T22:35:38 IST">
+    <test name="Default test" duration-ms="5536" started-at="2021-01-23T16:31:14 IST" finished-at="2021-01-23T16:31:20 IST">
+      <class name="runner.RunText">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunText@1060b431]" name="setUpClass" is-config="true" duration-ms="251" started-at="2021-01-23T16:31:14 IST" finished-at="2021-01-23T16:31:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunText@1060b431]" name="runScenario" duration-ms="5247" started-at="2021-01-23T16:31:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-23T16:31:20 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://leaftaps.com/opentaps/]]>
+                <![CDATA["TC_001 using positive credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[crmsfa]]>
+                <![CDATA["Optional[Login Functionality to LeafTap Application]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="executeDeleteLead()[pri:0, instance:testng.day2_learnDependency.DeleteLead@29b5cd00]" name="executeDeleteLead" duration-ms="10645" started-at="2021-01-12T22:35:38 IST" depends-on-methods="testng.day2_learnDependency.EditLeads.executeEditLeads" finished-at="2021-01-12T22:35:48 IST">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunText@1060b431]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2021-01-23T16:31:20 IST" finished-at="2021-01-23T16:31:20 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- executeDeleteLead -->
-      </class> <!-- testng.day2_learnDependency.DeleteLead -->
-      <class name="testng.day2_learnDependency.EditLeads">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.day2_learnDependency.EditLeads@60285225]" name="beforeSuite" is-config="true" duration-ms="6175" started-at="2021-01-12T22:35:15 IST" finished-at="2021-01-12T22:35:22 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://leaftaps.com/opentaps/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[crmsfa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="executeEditLeads()[pri:0, instance:testng.day2_learnDependency.EditLeads@60285225]" name="executeEditLeads" duration-ms="10202" started-at="2021-01-12T22:35:22 IST" depends-on-methods="testng.day2_learnDependency.CreateLead.executeCreateLead" finished-at="2021-01-12T22:35:32 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- executeEditLeads -->
-      </class> <!-- testng.day2_learnDependency.EditLeads -->
-      <class name="testng.day2_learnDependency.CreateLead">
-        <test-method status="PASS" signature="getExcelName()[pri:0, instance:testng.day2_learnDependency.CreateLead@e874448]" name="getExcelName" is-config="true" duration-ms="7" started-at="2021-01-12T22:35:05 IST" finished-at="2021-01-12T22:35:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getExcelName -->
-        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.day2_learnDependency.CreateLead@e874448]" name="beforeSuite" is-config="true" duration-ms="7249" started-at="2021-01-12T22:35:05 IST" finished-at="2021-01-12T22:35:12 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://leaftaps.com/opentaps/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[crmsfa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="executeCreateLead(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testng.day2_learnDependency.CreateLead@e874448]" name="executeCreateLead" duration-ms="3004" started-at="2021-01-12T22:35:12 IST" data-provider="fetchData" finished-at="2021-01-12T22:35:15 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Wirpo]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Karthik]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Gunasekaran]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- executeCreateLead -->
-      </class> <!-- testng.day2_learnDependency.CreateLead -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunText -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
