@@ -29,7 +29,7 @@ public class MergeLead extends BaseClass{
 		
 		driver.switchTo().window(listWindow.get(1));
 		//System.out.println(driver.getTitle());
-		driver.findElementByXPath("//input[@name='firstName']").sendKeys("Mahesh");
+		driver.findElementByXPath("//input[@name='firstName']").sendKeys("Gopi");
 		
 		driver.findElementByXPath("//button[text()='Find Leads']").click();
 		Thread.sleep(3000);

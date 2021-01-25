@@ -36,13 +36,15 @@ public class CreateLeadByXpath {
 		
 		obj.selectByVisibleText("India");
 		
-		WebElement findElementByXPath2 = driver.findElementByXPath("//input[@id='createLeadForm_generalStateProvinceGeoId']");
-		Select obj2 = new Select(findElementByXPath2);
-		
-		List<WebElement> options = obj2.getOptions();
-		int size = options.size();
-		
-		obj2.selectByIndex(size - 2);
+		/*
+		 * WebElement findElementByXPath2 = driver.findElementByXPath(
+		 * "//input[@id='createLeadForm_generalStateProvinceGeoId']"); Select obj2 = new
+		 * Select(findElementByXPath2);
+		 * 
+		 * List<WebElement> options = obj2.getOptions(); int size = options.size();
+		 * 
+		 * obj2.selectByIndex(size - 2);
+		 */
 		
 		driver.findElementByXPath("//input[@value='Create Lead']").click();
 		

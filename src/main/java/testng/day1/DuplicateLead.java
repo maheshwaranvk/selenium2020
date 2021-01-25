@@ -10,8 +10,7 @@ public class DuplicateLead extends BaseClass{
 	public void executeDuplicateLead() throws InterruptedException {
 
 		driver.findElementByXPath("//a[text()='Find Leads']").click();
-		driver.findElementByXPath("(//span[@class='x-tab-strip-inner'])[3]/span").click();
-		driver.findElementByXPath("//input[@name='emailAddress']").sendKeys("gmail");
+		driver.findElementByXPath("(//input[@name='firstName'])[3]").sendKeys("Gopi");
 		driver.findElementByXPath("//button[text()='Find Leads']").click();
 		Thread.sleep(2000);
 		String originalID = driver.findElementByXPath("(//div[@class='x-grid3-cell-inner x-grid3-col-partyId'])[1]/a[1]").getText();
