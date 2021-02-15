@@ -22,8 +22,10 @@ public class ReadExcelData {
 		
 		int lastRowNum = ws.getLastRowNum();
 		System.out.println(lastRowNum);
+		
 		short lastCellNum = ws.getRow(0).getLastCellNum();
 		System.out.println(lastCellNum);
+		
 		
 		String[][] data  = new String[lastRowNum][lastCellNum];
 		
