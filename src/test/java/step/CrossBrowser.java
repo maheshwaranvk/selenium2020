@@ -36,6 +36,7 @@ public class CrossBrowser {
 	@Given("Load Google Url")
 	public void load_google_url() {
 	    driver.get("https://www.google.com/");
+	    
 	}
 
 	@Then("Google Url should open")

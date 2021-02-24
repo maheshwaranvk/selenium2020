@@ -18,7 +18,15 @@ public class CreateLead extends BaseClass{
 		driver.findElementById("createLeadForm_firstName").sendKeys("Gopi");
 		driver.findElementById("createLeadForm_lastName").sendKeys("J");
 		driver.findElementByName("submitButton").click();
-		driver.close();
+		String text = driver.findElementById("viewLead_companyName_sp").getText();
+		
+		  String replaceAll = text.replaceAll("\\D", "");
+		  
+		/*
+		 * int leadID = Integer.parseInt(text); System.out.println(leadID);
+		 */
+		 
+		System.out.println(replaceAll);
 }
 }
 
